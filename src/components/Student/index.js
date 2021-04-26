@@ -34,7 +34,7 @@ const Student = () => {
       <motion.div
         className="info"
         initial={{ x: 320 }}
-        animate={{x: showInfo ? 0 : 3520}}
+        animate={{x: showInfo ? 0 : 350}}
         transition={{
           type: 'spring',
           stiffness: 350,
