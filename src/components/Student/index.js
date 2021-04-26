@@ -17,7 +17,7 @@ const Student = () => {
         className="button"
         onClick={() => setShowInfo(!showInfo)}
         initial={{ x: 0 }}
-        animate={{x: !showInfo ? 0 : -320}}
+        animate={{x: !showInfo ? 0 : -340}}
         transition={{
           type: 'spring',
           stiffness: 350,
