@@ -4,6 +4,7 @@ import Input from './components/Input'
 import StateBox from './components/StateBox'
 
 import './app.css'
+import Student from "./components/Student";
 
 function App() {
 
@@ -29,6 +30,7 @@ function App() {
         name={name}
         phone={phone}
       />
+      <Student />
     </div>
   );
 }
