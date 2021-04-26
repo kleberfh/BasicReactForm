@@ -1,23 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react'
+
+import Input from './components/Input'
+import StateBox from './components/StateBox'
+
+import './app.css'
 
 function App() {
+
+  const [name, setName] = useState("")
+  const [phone, setPhone] = useState("")
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <div className="inputs_container">
+        <Input
+          label="Digite o nome:"
+          value={name}
+          onChange={setName}
+        />
+        <Input
+          phone
+          label="Digite o telefone:"
+          value={phone}
+          onChange={setPhone}
+        />
+      </div>
+      <StateBox
+        name={name}
+        phone={phone}
+      />
     </div>
   );
 }
